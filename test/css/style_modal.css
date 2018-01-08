@@ -1,0 +1,962 @@
+/* ========================================= General styles ======================================*/
+@font-face { 
+    font-family: "FontFamilyLogo";
+    src: url("../fonts/GOODTIME.ttf");
+}
+@font-face { 
+    font-family: "FontFamilySPro";
+    src: url("../fonts/SourceSansPro-Regular.otf");
+}
+/*-- //header --*/
+.f {
+background-image: url(../images/fondo.jpeg);
+background-size: cover;
+
+}
+.fondo {
+    background-image: url(../images/brand-icon-bg.jpg);
+}
+
+.progress-bar-default{background-color:#bdc3c7}
+.progress-bar-primary{background-color:#1abc9c}
+.progress-bar-success{background-color:#2dcc70}
+.progress-bar-warning{background-color:#f1c40f}
+.progress-bar-info{background-color:#3598db}
+.progress-bar-danger{background-color:#e84c3d}
+
+.header {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+	z-index:100;
+}
+
+/* Links inside the navbar */
+
+
+/* Main content */
+
+.ulclass {
+    font-size: 1em;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+.header ul li {
+    float: left;
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    padding: 7px 0;
+    letter-spacing: 1px;
+    border-right: 1px solid #464444;
+}
+.header ul li a {
+     color: #fff;
+    text-decoration: none;
+}
+.header ul li i {
+    margin-right: 12px;
+    top: 2px;
+    color: #fe9126;
+    font-size: 17px;
+}
+.header-right {
+    text-align: right;
+}
+.header-left{
+    text-align: left;	
+}
+.header-bot_inner_wthreeinfo_header_mid {
+    margin: 0 auto;
+    width: 90%;
+}
+/*-- //social iconos --*/
+.social-nav {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 1em 0 0;
+    float: right;
+}
+.social-nav li {
+    display: inline-block;
+    margin: 0 6px;
+}
+.social-nav a {
+    display: inline-block;
+    float: none;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background: #000;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+/*-- //login --*/
+.modal-header {
+    border-bottom: none;
+}
+.login-right h3 ,.login-bottom h3{
+    color: #2fdab8;
+    font-size: 22px;
+    margin-bottom: 23px;
+}
+.sign-in a {
+    font-size: 12px;
+    color: #A9A9A9;
+    text-decoration: none;
+}
+.sign-in a:hover{
+    color: #2fdab8;	
+}
+.single-bottom input[type="checkbox"] {
+  display: none;
+}
+.single-bottom input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 31px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #A9A8A8;
+	font-weight:normal;
+}
+.single-bottom input[type="checkbox"]+label span:first-child {
+	width: 14px;
+    height: 14px;
+    display: inline-block;
+    border:2px solid #2fdab8;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.single-bottom input[type="checkbox"]:checked+label span:first-child:before {
+  content: "";
+  background:url(../images/mark1.png)no-repeat;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  font-size: 10px;
+  width:16px;
+  height:16px;
+  }
+.single-bottom {
+    margin:14px 0 22px;
+}
+.login-grids p{
+	font-size:14px;
+	text-align:center;
+	margin-top:30px;
+	color:#000;
+}
+.login-grids p a {
+    color: #000;
+    text-decoration: none;
+}
+.login-grids p a:hover{
+    color: #2fdab8;	
+}
+/*-- //input --*/
+/*-- input-effect --*/
+.styled-input input:focus ~ label, .styled-input input:valid ~ label,.styled-input textarea:focus ~ label ,.styled-input textarea:valid ~ label{
+    font-size: .9em;
+    color: #FFFFFF                                              !important;
+    top: -1.3em;
+    -webkit-transition: all 0.125s;
+	-moz-transition: all 0.125s; 
+	-o-transition: all 0.125s;
+	-ms-transition: all 0.125s;
+    transition: all 0.125s;
+}
+.styled-input {
+	width:100%;
+	margin: 0em 0 1em;
+	position: relative;
+}
+.styled-input label {
+	color:#FFFFFF                                            !important;
+	text-transform: uppercase;
+    padding: 0.5em 0em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none;
+    font-weight: 550;
+    font-size: 14px;
+	letter-spacing:2px;
+    display: block;
+    line-height: 1em;
+}
+.styled-input input ~ span, .styled-input textarea ~ span {
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFFFFF                                        !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.125s;
+    -moz-transition: all 0.125s;
+    transition: all 0.125s;
+}
+.styled-input textarea ~ span { 
+    bottom: 5px; 
+}
+.styled-input input:focus.styled-input textarea:focus { 
+	outline: 0; 
+} 
+.styled-input input:focus ~ span,.styled-input textarea:focus ~ span {
+	width: 100%;
+	-webkit-transition: all 0.075s;
+	-moz-transition: all 0.075s;  
+	transition: all 0.075s; 
+} 
+.white-w3ls{
+	color:#fff!important;
+}
+.modal-body-sub {
+    padding:2em !important;
+}
+.modal-title {
+    font-size: 1.1em;
+    color: #212121;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 1em;
+    letter-spacing: 2px;
+}
+.modal-body.modal-body-sub_agile input[type="text"],.modal-body.modal-body-sub_agile input[type="email"],.modal-body.modal-body-sub_agile input[type="password"] {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #FFFFFF                                           !important;
+    padding: 0.5em 1em 0.5em 0;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+h3.agileinfo_sign {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+.modal_body_right.modal_body_right1 {
+    padding: 0;
+}
+
+h3.agileinfo_sign span {
+font-weight:300;
+color: #FFFFFF;
+}
+
+.modal-body.modal-body-sub_agile ::-webkit-input-placeholder{
+	color:#212121 !important;
+}
+.modal-body.modal-body-sub_agile input[type="submit"]{
+    border: none;
+    padding: 10px 40px 10px;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+    margin: 0 0 0 -4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+	background:#3399cc;
+    color: #fff;
+}
+.modal-body.modal-body-sub_agile input[type="submit"]:hover{
+   background: #FFA500 !important;
+}
+.modal_body_right.modal_body_right1 img {
+    width: 100%;
+}
+ul.social-nav.model-3d-0.footer-social.w3_agile_social.top_agile_third {
+    float: left;
+}
+.modal-body.modal-body-sub_agile p a {
+    font-size: 1.2em;
+    color: #FFFFFF                                           !important;
+    letter-spacing: 1px;
+}
+.modal-body.modal-body-sub_agile p {
+    font-size: 0.6em;
+    font-weight: 600;
+    line-height: 2em;
+    color: #000;
+}
+ul.social-nav.model-3d-0.footer-social.w3_agile_social.top_agile_third {
+    margin: 2em 0 0.5em 0;
+}
+.modal_body_left.modal_body_left1 {
+  padding-left:0;
+}
+.modal-body.modal-body-sub_agile {
+    
+    margin-top: 1em;
+}
+.modal-content.top_w3lform_agile {
+    padding: 2em 0;
+    border-radius: 0;
+}
+button.close.top_wthree_agile {
+    margin: -34px 0 0 0;
+    color: #000;
+}
+.bb-middle-agileits-w3layouts.forth.grid {
+    margin-top: 0.95em;
+}
+
+/*-- //input --*/
+
+/*-- // fin header --*/
+
+
+
+/* ========================================= index styles ======================================*/
+#container-page-index{
+    background-image: url(../assets/img/font-index.JPG);	
+}
+#jumbotron-index{
+    margin: 0px;
+    padding: 140px 25px;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+}
+#new-prod-index{
+    background-color: rgba(255,255,255,.9);
+}
+#reg-info-index{
+    background-color: rgba(255,255,255,.9);
+    border-top: 1px solid rgba(183, 165, 165,.2);
+}
+#distribuidores-index{
+    background-color: rgba(186, 188, 171,.87);
+    color: #000;
+}
+/* ========================================= product styles ======================================*/
+#container-page-product{
+    background-image: url(../assets/img/font-index.JPG);
+}
+#store, #infoproduct, #container-pedido{
+    background-color: rgba(255,255,255,.97);
+    /*min-height: 900px;*/
+}
+/* ========================================= registration styles ======================================*/
+#container-page-registration{
+    background-image: url(../assets/img/font-registration.jpg);
+}
+#form-registration{
+    min-height: 900px;
+    background-color: rgba(255,255,255,.95);
+    padding-top: 120px;
+}
+#container-form{
+    width: 100%;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 7px;
+}
+#container-page-configAdmin{
+    background-image: url(../assets/img/font-index.JPG);
+}
+#prove-product-cat-config{
+    background-color: #fff;
+    min-height: 900px;
+}
+#add-product,
+#del-prod-form,
+#add-categori,
+#del-categori,
+#add-provee,
+#del-prove,
+#add-admin,
+#del-admin,
+#del-pedido{
+    border: 1px solid #e0e1e1 !important;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* ========================================= Check radio  styles ======================================*/
+/* iCheck plugin Flat skin
+----------------------------------- */
+.icheckbox_flat,
+.iradio_flat {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(flat.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat {
+    background-position: 0 0;
+}
+    .icheckbox_flat.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat {
+    background-position: -88px 0;
+}
+    .iradio_flat.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat,
+    .iradio_flat {
+        background-image: url(flat@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* red */
+.icheckbox_flat-red,
+.iradio_flat-red {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(red.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-red {
+    background-position: 0 0;
+}
+    .icheckbox_flat-red.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-red.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-red.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-red {
+    background-position: -88px 0;
+}
+    .iradio_flat-red.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-red.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-red.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-red,
+    .iradio_flat-red {
+        background-image: url(red@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* green */
+.icheckbox_flat-green,
+.iradio_flat-green {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(green.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-green {
+    background-position: 0 0;
+}
+    .icheckbox_flat-green.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-green.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-green.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-green {
+    background-position: -88px 0;
+}
+    .iradio_flat-green.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-green.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-green.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-green,
+    .iradio_flat-green {
+        background-image: url(green@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* blue */
+.icheckbox_flat-blue,
+.iradio_flat-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(blue.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-blue {
+    background-position: 0 0;
+}
+    .icheckbox_flat-blue.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-blue.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-blue.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-blue {
+    background-position: -88px 0;
+}
+    .iradio_flat-blue.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-blue.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-blue.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-blue,
+    .iradio_flat-blue {
+        background-image: url(blue@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* aero */
+.icheckbox_flat-aero,
+.iradio_flat-aero {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(aero.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-aero {
+    background-position: 0 0;
+}
+    .icheckbox_flat-aero.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-aero.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-aero.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-aero {
+    background-position: -88px 0;
+}
+    .iradio_flat-aero.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-aero.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-aero.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-aero,
+    .iradio_flat-aero {
+        background-image: url(aero@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* grey */
+.icheckbox_flat-grey,
+.iradio_flat-grey {
+    
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(grey.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-grey {
+    background-position: 0 0;
+}
+    .icheckbox_flat-grey.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-grey.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-grey.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-grey {
+    background-position: -88px 0;
+}
+    .iradio_flat-grey.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-grey.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-grey.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-grey,
+    .iradio_flat-grey {
+        background-image: url(grey@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* orange */
+.icheckbox_flat-orange,
+.iradio_flat-orange {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(orange.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-orange {
+    background-position: 0 0;
+}
+    .icheckbox_flat-orange.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-orange.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-orange.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-orange {
+    background-position: -88px 0;
+}
+    .iradio_flat-orange.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-orange.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-orange.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-orange,
+    .iradio_flat-orange {
+        background-image: url(orange@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* yellow */
+.icheckbox_flat-yellow,
+.iradio_flat-yellow {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(yellow.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-yellow {
+    background-position: 0 0;
+}
+    .icheckbox_flat-yellow.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-yellow.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-yellow.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-yellow {
+    background-position: -88px 0;
+}
+    .iradio_flat-yellow.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-yellow.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-yellow.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-yellow,
+    .iradio_flat-yellow {
+        background-image: url(yellow@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* pink */
+.icheckbox_flat-pink,
+.iradio_flat-pink {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(pink.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-pink {
+    background-position: 0 0;
+}
+    .icheckbox_flat-pink.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-pink.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-pink.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-pink {
+    background-position: -88px 0;
+}
+    .iradio_flat-pink.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-pink.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-pink.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-pink,
+    .iradio_flat-pink {
+        background-image: url(pink@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+/* purple */
+.icheckbox_flat-purple,
+.iradio_flat-purple {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(purple.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-purple {
+    background-position: 0 0;
+}
+    .icheckbox_flat-purple.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-purple.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-purple.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-purple {
+    background-position: -88px 0;
+}
+    .iradio_flat-purple.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-purple.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-purple.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_flat-purple,
+    .iradio_flat-purple {
+        background-image: url(purple@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}
+
+
+
+
+/* ========================================= configAdmin styles ======================================*/

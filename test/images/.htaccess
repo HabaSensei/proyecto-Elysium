@@ -1,0 +1,12 @@
+
+# HTID:3473316: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:3473316:
+php_flag output_buffering on
+AddHandler application/x-httpd-php56 .php
+
+<FilesMatch "\.(js|css|ico|pdf|jpg|jpeg|png|gif|php)$">
+SetOutputFilter DEFLATE
+Header set Cache-Control "max-age=86400, public"
+</FilesMatch>
+
